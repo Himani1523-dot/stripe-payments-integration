@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+
+    <p>Welcome, {{ user.name }}</p>
+
+    <p>
+      <a href="{% url 'logout' %}">Logout</a>
+    </p>
+
+    <hr />
+
+    <h3>Subscription Status</h3>
+
+    {% if has_active_subscription %}
+    <p>Status: <strong>Active</strong></p>
+    <p>You have an active subscription 🎉</p>
+    {% else %}
+    <p>Status: <strong>Inactive</strong></p>
+
+    <form method="post" action="{% url 'checkout' %}">
+      {% csrf_token %}
+      <button type="submit">Subscribe Now</button>
+    </form>
+    {% endif %}
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+
+    <p>Welcome, {{ user.name }}</p>
+
+    <p>
+      <a href="{% url 'logout' %}">Logout</a>
+    </p>
+
+    <hr />
+
+    <h3>Subscription Status</h3>
+
+    {% if has_active_subscription %}
+      <p>Status: <strong>Active</strong></p>
+      <p>You have an active subscription 🎉</p>
+
+      <form method="post" action="{% url 'manage-subscription' %}">
+        {% csrf_token %}
+        <button type="submit">Manage / Upgrade Subscription</button>
+      </form>
+
+    {% else %}
+      <p>Status: <strong>Inactive</strong></p>
+
+      <form method="post" action="{% url 'checkout' %}">
+        {% csrf_token %}
+        <button type="submit">Subscribe Now</button>
+      </form>
+    {% endif %}
+
+  </body>
+</html> {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
