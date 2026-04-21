@@ -7,7 +7,7 @@ This project covers the **complete subscription lifecycle**: user registration, 
 
 ---
 
-## 🚀 Features
+##  Features
 
 - User registration, login, and logout
 - Automatic Stripe Customer creation on signup
@@ -63,7 +63,7 @@ This project covers the **complete subscription lifecycle**: user registration, 
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```bash
 git clone https://github.com/yourusername/stripe-payments-integration.git
 cd stripe-payments-integration
